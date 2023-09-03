@@ -1,5 +1,7 @@
 # hw-js
 
+collaborated w/ @aysipixie
+
 to install
 ```
 npm install
