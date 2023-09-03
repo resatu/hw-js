@@ -239,29 +239,6 @@ const data = [
   },
 ];
 
-// i want to group by the group attribute with type = true and add new attribute called students to each group and add the students to it which have the same group but type = null
-
-// let output1 = data.map((item) => {
-//     return {
-//         ...data.filter((student) => {
-//             return student.type === true;
-//         }),
-//         students: data.filter((student) => {
-//             return student.group === item.group && student.type === null;
-//         }),
-//     };
-// }
-// );
-
-// console.log(output1);
-
-// let IndianRed = data.filter((item) => {
-//     return item.group === 'IndianRed';
-//   });
-//    console.log(indianRed);
-
-// console.log(groupDataByGroup);
-
 let groupDataByGroup = data.filter((item) => {
   return item.type === true;
 });
@@ -276,17 +253,3 @@ let addNullType = groupDataByGroup.map((item) => {
 });
 
 console.log(addNullType);
-
-// let mapStudents = data.map((item) => {
-//     return {
-//         ...item.filter((item) => {
-//             return item.type === true;
-//         },),
-//         students: data.filter((student) => {
-//         return student.group === item.group && student.type === null;
-//         }),
-//     };
-//     }
-// );
-
-// console.log(mapStudents);
